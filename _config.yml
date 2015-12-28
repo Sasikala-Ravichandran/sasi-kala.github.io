@@ -1,3 +1,17 @@
+navigation:
+  - text: Home
+    title: Home
+    url: / 
+  - text: About
+    title: About
+    url: /about.html 
+  - text: Portfolio
+    title: Portfolio
+    url: /portfolio.html
+  - text: Archive
+    title: Archive
+    url: /archive.html  
+
 markdown: redcarpet
 baseurl: /sasi-kala.github.io
 exclude: ['README.md']
