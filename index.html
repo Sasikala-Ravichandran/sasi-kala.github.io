@@ -1,0 +1,19 @@
+---
+layout: default
+title: Home
+---
+
+<section class="container">
+  <div class="row">
+    <ul style="list-style-position: inside">
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
+             <small> - {{ post.date | date: "%d %B %Y" }} </small>
+             <hr>
+           </li>
+        {% endfor %}
+      </ul>
+    
+  </div>
+</section>
