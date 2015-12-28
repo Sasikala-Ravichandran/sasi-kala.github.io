@@ -15,3 +15,6 @@ navigation:
 markdown: redcarpet
 baseurl: /sasi-kala.github.io
 exclude: ['README.md']
+sass:
+    sass_dir: _sass
+    style: compressed
