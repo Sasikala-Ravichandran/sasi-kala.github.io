@@ -2,18 +2,25 @@
 layout: default
 title: Home
 ---
-My Personal Site
+
 <section class="container">
   <div class="row">
-    <ul style="list-style-position: inside">
-      {% for post in site.posts %}
-        <li>
-          <h2><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
-             <small> - {{ post.date | date: "%d %B %Y" }} </small>
-             <hr>
-           </li>
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <ul style="list-style-position: inside; list-style-type: none;">
+        {% for post in site.posts %}
+          <li>
+            <div class="post-preview">
+               <a href="{{ post.url }}">
+                 <h2 class="post-title">{{ post.title }}</h2>
+                 <h2 class="post-subtitle">{{ post.description }}</h2>
+                 <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%d %B %Y" }} </p>
+                 <p>{{ post.excerpt }}</p>
+                 <hr>
+               </a>
+            </div>
+          </li>
         {% endfor %}
       </ul>
-    
+    </div>
   </div>
 </section>
