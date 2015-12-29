@@ -1,0 +1,51 @@
+---
+layout: page
+title: Contact
+---
+
+<!-- formspree -->
+<form name="sentMessage" id="contactForm" novalidate action="//formspree.io/passion.rails@gmail.com" method="POST">
+   
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Name</label>
+     <input type="text" class="form-control" id="name" placeholder="Your name" required data-validation-required-message="Please enter your name">
+     <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Email</label>
+     <input ttype="email" name="_replyto" placeholder="Your email" class="form-control" id="email" required data-validation-required-message="Please enter your email">
+     <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Message</label>
+      <textarea rows="5" class="form-control" id="message" placeholder="Your message" required data-validation-required-message="Please enter your message"></textarea>
+      
+     <p class="help-block text-danger"></p>
+    </div>
+  </div>
+      
+  <input type="hidden" name="_subject" value="Website contact" />
+  <input type="text" name="_gotcha" style="display:none" />
+  <br>
+  <div id="success"></div>
+    <div class="row">
+      <div class="form-group col-xs-12">
+        <button type="submit" class="btn btn-default">Send</button>
+      </div>
+  </div>
+</form>
+
+<!-- formkeep 
+<form accept-charset="UTF-8" action="https://formkeep.com/f/53168470f8de" method="POST">
+  <input type="hidden" name="utf8" value="✓">
+  <input type="email" name="email" placeholder="Your Email">
+  <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+  <button type="submit">Submit</button>
+</form> -->
