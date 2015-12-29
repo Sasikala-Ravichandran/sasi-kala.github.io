@@ -1,23 +1,24 @@
 ---
 layout: default
-title: Home
+title: "Home"
 ---
 
-<section class="container">
+<section id="home" class="container">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
       <ul style="list-style-position: inside; list-style-type: none;">
         {% for post in site.posts %}
           <li>
             <div class="post-preview">
-               <a href="{{ post.url }}">
-                 <h2 class="post-title">{{ post.title }}</h2>
-                 <h2 class="post-subtitle">{{ post.description }}</h2>
-                 <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%d %B %Y" }} </p>
-                 <p>{{ post.excerpt }}</p>
-                 <hr>
+               <a style="text-decoration:none" href="{{ post.url }}">
+                 <h1 class="post-title">{{ post.title }}</h1>
                </a>
-            </div>
+               <small class="post-meta"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date_to_string }} &nbsp;<i class="fa fa-tags"></i>&nbsp;{{ post.tags }}</small>
+                
+               <p class="post-subtitle"><em>{{ post.description }}</em></p>
+               <!-- <p>{{ post.excerpt }}</p> -->
+               <hr>
+              </div>
           </li>
         {% endfor %}
       </ul>

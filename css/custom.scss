@@ -27,8 +27,27 @@ p, div {
   font-family: 'Dosis', sans-serif;
 }
 
+
 #logo{
   margin-left: 100px;
+}
+
+#home a { 
+  color: inherit;
+  &:hover{
+     color: #5e6e7e;
+     text-decoration:none; 
+     cursor:pointer;  
+  }
+
+}
+
+#home h1{
+  margin-bottom: 0px;
+}
+
+#home small{
+  margin-top: 0px;
 }
 
 #contact{
@@ -40,6 +59,15 @@ p, div {
    font-size: .75em;
    text-decoration: none;
 }
+
+#post h1{
+  margin-bottom: 0px;
+}
+
+#post hr{
+  margin-top: 0px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
