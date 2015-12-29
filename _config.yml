@@ -13,7 +13,7 @@ navigation:
     url: /archive.html  
 
 markdown: redcarpet
-baseurl: /sasi-kala.github.io
+baseurl: / 
 exclude: ['README.md']
 sass:
     sass_dir: _sass
