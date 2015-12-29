@@ -52,7 +52,12 @@ p, div {
   padding-left: 15px;
   color: #566473;
 }
-
-.footer > small {
-  font-size: .75em;
+.footer ul {
+  padding: 0;
+  margin: 0;
+}
+.footer small p {
+  font-size: .6em;
+  padding: 0;
+  margin: 0;
 }

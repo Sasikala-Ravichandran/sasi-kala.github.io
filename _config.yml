@@ -13,7 +13,6 @@ navigation:
     url: /archive.html  
 
 markdown: redcarpet
-baseurl: / 
 exclude: ['README.md']
 sass:
     sass_dir: _sass
