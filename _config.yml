@@ -14,6 +14,9 @@ navigation:
 
 markdown: redcarpet
 exclude: ['README.md']
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/blog/page/:num"
 sass:
     sass_dir: _sass
     style: compressed
