@@ -13,6 +13,7 @@ title: "Home"
                <a style="text-decoration:none" href="{{ post.url }}">
                  <h1 class="post-title">{{ post.title }}</h1>
                </a>
+               (<a href="{{ post.url }}#disqus_thread"></a>)
                <small class="post-meta"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date_to_string }} &nbsp;<i class="fa fa-tags"></i>&nbsp;{{ post.tags }}</small> 
                 
                <p class="post-subtitle"><em>{{ post.description }}</em></p>
@@ -26,6 +27,7 @@ title: "Home"
   </div>
  
 <!-- Pagination links -->
+
   <div class="row">
     <div class="col-lg-2 col-lg-offset-5 col-md-10 col-md-offset-1">
       {% if paginator.total_pages > 1 %}
