@@ -10,10 +10,10 @@ title: "Home"
         {% for post in paginator.posts  %}
           <li>
             <div class="post-preview">
-               <a style="text-decoration:none" href="{{ post.url }}">
+               <a style="text-decoration:none" href="{{ post.url }}#disqus_thread">
                  <h1 class="post-title">{{ post.title }}</h1>
                </a>
-               (<a href="{{ post.url }}#disqus_thread"></a>)
+            
                <small class="post-meta"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date_to_string }} &nbsp;<i class="fa fa-tags"></i>&nbsp;{{ post.tags }}</small> 
                 
                <p class="post-subtitle"><em>{{ post.description }}</em></p>
