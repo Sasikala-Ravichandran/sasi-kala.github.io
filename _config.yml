@@ -4,7 +4,7 @@ navigation:
     url: / 
   - text: About
     title: About
-    url: /about 
+    url: /about.html 
   - text: Portfolio
     title: Portfolio
     url: /portfolio.html
