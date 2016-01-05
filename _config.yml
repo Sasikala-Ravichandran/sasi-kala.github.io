@@ -4,13 +4,13 @@ navigation:
     url: / 
   - text: About
     title: About
-    url: /about.html 
+    url: /about/
   - text: Portfolio
     title: Portfolio
     url: /portfolio.html
   - text: Contact
     title: Contact
-    url: /contact.html  
+    url: /contact/
 
 url: http://www.sasi-kala.com
 
@@ -22,5 +22,6 @@ paginate_path: "/blog/page/:num"
 sass:
     sass_dir: _sass
     style: compressed
+
 permalink: /blog/:title
 
