@@ -13,7 +13,14 @@ title: "Home"
                <a style="text-decoration:none" href="{{ post.url }}">
                  <h1 class="post-title">{{ post.title }}</h1>
                </a>
-               <small class="post-meta"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date_to_string }} &nbsp;<i class="fa fa-tags"></i>&nbsp;{{ post.tags }}</small> 
+               <small class="post-meta">
+                 <i class="fa fa-calendar"></i>
+                 &nbsp;{{ post.date | date_to_string }} &nbsp;
+                 <i class="fa fa-tags"></i>
+                 &nbsp;{{ post.tags }}
+                 <i class="fa fa-comments"></i>
+                 &nbsp;<a href="{{ post.url }}#disqus_thread"></a>
+               </small> 
                 
                <p class="post-subtitle"><em>{{ post.description }}</em></p>
                <!-- <p>{{ post.excerpt }}</p> -->
