@@ -12,6 +12,8 @@ navigation:
     title: Contact
     url: /contact.html  
 
+url: http://www.sasi-kala.com
+
 markdown: redcarpet
 exclude: ['README.md']
 gems: [jekyll-paginate]
