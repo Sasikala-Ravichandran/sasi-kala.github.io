@@ -7,7 +7,7 @@ navigation:
     url: /about/
   - text: Portfolio
     title: Portfolio
-    url: /portfolio.html
+    url: /portfolio/
   - text: Contact
     title: Contact
     url: /contact/
