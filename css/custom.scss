@@ -96,6 +96,26 @@ p, div {
 .post-tags {
   text-align: right;
 }
+
+.forms_width {
+  display: inline;
+  width: 70%;
+  margin-left: 5px;
+  vertical-align: top;
+}
+#contactForm {
+  margin-top: 20px;
+  width: 50%;
+  margin: auto;
+}
+.form_text {
+  margin-left: 15px;
+}
+
+.sending{
+   text-align: center;
+   margin: 0, auto;
+}
 .footer {
   position: absolute;
   bottom: 0;

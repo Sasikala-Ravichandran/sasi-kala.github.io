@@ -16,10 +16,51 @@ description: "About page of Sasikala Ravichandran"
   <a href="https://www.linkedin.com/in/sasikala-ravichandran-5b066419"><img src="{{site.url}}/img/linkedin-wrap.png" alt="Linkedin Logo" height="30" width="30"></a> 
   <a href="https://github.com/Sasikala-Ravichandran"><img src="{{site.url}}/img/github-wrap.png" alt="Github Logo" height="30" width="30"></a> 
    
+  <h2>Contact Me</h2>
    <!-- No need     
   <h2>Contact me</h2>
   <ul id="contact">
     <li><a href="mailto:passion.rails@gmail.com">Hello@SasikalaRavichandran.com</a></li>
     <li><a href="http://www.twitter.com/intent/tweet?screen_name=sasikalaravicha">@SasikalaRavicha</a></li>
   </ul> -->
+<br>
+<br>
+<form name="sentMessage" id="contactForm" novalidate action="//formspree.io/passion.rails@gmail.com" method="POST">
+   
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Name: </label>
+     <input type="text" class="form-control forms_width" id="name" placeholder="Your name" required data-validation-required-message="Please enter your name">
+     <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Email: </label>
+     <input ttype="email" name="_replyto" placeholder="Your email" class="form-control forms_width" id="email" required data-validation-required-message="Please enter your email">
+     <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Text:</label>
+      <textarea rows="5" class="form-control forms_width form_text" id="message" placeholder="Your message" required data-validation-required-message="Please enter your message"></textarea>
+      
+     <p class="help-block text-danger"></p>
+    </div>
+  </div>
+      
+  <input type="hidden" name="_subject" value="Website contact" />
+  <input type="text" name="_gotcha" style="display:none" />
+  <br>
+  <div id="success"></div>
+    <div class="row">
+      <div class="form-group col-xs-12 sending">
+        <button type="submit" class="btn btn-default">Send</button>
+      </div>
+  </div>
+</form>
+
 </section>    
