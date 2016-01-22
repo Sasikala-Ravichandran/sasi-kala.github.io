@@ -22,8 +22,8 @@ exclude: ['README.md']
 paginate: 5
 paginate_path: "/blog/page/:num"
 sass:
-  sass_dir: _sass
-  style: compressed
+    sass_dir: _sass
+    style: compressed
 
 permalink: /blog/:title
 gems:
