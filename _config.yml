@@ -15,15 +15,15 @@ navigation:
     title: Tags
     url: /tags/
 
-url: http://www.sasi-kala.com
+#url: http://www.sasi-kala.com
 
 markdown: redcarpet
 exclude: ['README.md']
 paginate: 5
 paginate_path: "/blog/page/:num"
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed
 
 permalink: /blog/:title
 gems:
