@@ -4,7 +4,7 @@ navigation:
     url: / 
   - text: Archive
     title: Archive
-    url: /tags/
+    url: /archives/
   - text: About
     title: About
     url: /about/
