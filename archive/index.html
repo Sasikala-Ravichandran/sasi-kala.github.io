@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Tags
+title: Archives
 description: "Tag page of Sasikala Ravichandran"
-permalink: /tags/
 ---
 
+<h1 style="text-align: center; margin-bottom: 25px;">Tags</h1>
 {% capture site_tags %}
   {% for tag in site.tags %}
     {{ tag | first }}
@@ -12,13 +12,11 @@ permalink: /tags/
 {% endcapture %}
  
 {% assign sortedtags = site_tags | split:' ' | sort %}
- 
-<h1>Tags</h1>
   <ul class="tag-cloud">
    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
      {% capture this_tag %}{{ sortedtags[item] | strip_newlines }}{% endcapture %}
-      <li><a href="#{{ this_tag | cgi_escape }}">
-        {{ this_tag }} <span>{{ site.tags[this_tag].size }}</span>
+      <li><a href="#{{ this_tag | cgi_escape }}" class="btn">
+        {{ this_tag }}<span>({{ site.tags[this_tag].size }})</span>
       </a></li>
     {% endunless %}{% endfor %}
     </ul>

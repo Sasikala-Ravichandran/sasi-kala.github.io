@@ -1,19 +1,16 @@
 navigation:
-  - text: Home
-    title: Home
+  - text: Blog
+    title: Blog
     url: / 
+  - text: Archive
+    title: Archive
+    url: /tags/
   - text: About
     title: About
     url: /about/
   - text: Portfolio
     title: Portfolio
     url: /portfolio/
-  - text: Contact
-    title: Contact
-    url: /contact/
-  - text: Tags
-    title: Tags
-    url: /tags/
 
 #url: http://www.sasi-kala.com
 
