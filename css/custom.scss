@@ -1,10 +1,5 @@
----
----
-    
 @import "bootstrap";
 
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -73,6 +68,31 @@ p, div {
    content: ""; /* clears default height */
    margin-top: 10px;
 }
+
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  text-align: justify; 
+  font-size: 16px;
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 12px 12px 0; 
+  }
+}
+#archives {
+  padding: 5px;
+}
+.archive-group {
+  margin: 5px;
+  border-top: 1px solid #ddd;
+}
+.archive-item {
+  margin-left: 0px;
+}
+.post-tags {
+  text-align: right;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -94,3 +114,4 @@ p, div {
   padding: 0;
   margin: 0;
 }
+ 
