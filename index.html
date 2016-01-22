@@ -26,7 +26,7 @@ description: "Home page of Sasikala Ravichandran"
                  {% for item in (0..post.tags.size) %}{% unless forloop.last %}
                    {% capture this_tag %}{{ sortedposttags[item] | strip_newlines }}
                    {% endcapture %}
-                   <a href="{{site.url}}/tags/#{{ this_tag }}">{{ this_tag }}</a>
+                   <a href="{{site.url}}/archives/#{{ this_tag }}">{{ this_tag }}</a>
                  {% endunless %}{% endfor %}
                  <!--<i class="fa fa-comments"></i>
                  &nbsp;<a href="{{ post.url }}#disqus_thread"></a> -->
