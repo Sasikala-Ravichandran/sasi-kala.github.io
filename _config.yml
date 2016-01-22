@@ -12,7 +12,7 @@ navigation:
     title: Portfolio
     url: /portfolio/
 
-#url: http://www.sasi-kala.com
+url: http://www.sasi-kala.com
 
 markdown: redcarpet
 exclude: ['README.md']
