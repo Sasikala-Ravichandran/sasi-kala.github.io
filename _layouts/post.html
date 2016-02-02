@@ -11,6 +11,7 @@ layout: default
         {% endcapture %}
         {% assign sortedpagetags = page_tags | split:' ' | sort %}
         <h1>{{ page.title }}</h1>
+        <p></p>
         <small class="text-muted">
           <i class="fa fa-calendar"></i>&nbsp;{{ page.date | date_to_string }}&nbsp;
           <i class="fa fa-tags"></i>&nbsp;
@@ -20,10 +21,9 @@ layout: default
             <a href="{{site.url}}/archives/#{{ this_tag }}">{{ this_tag }}</a>
           {% endunless %}{% endfor %}
          </small>
+         <p></p>
          <hr>
-         <small><em>{{ page.description }}</em></small>
-         <br>
-         <br>
+         <!--<small><em>{{ page.description }}</em></small> -->
          {{ content }}
          {% include share_buttons.html %}
          {% include comments.html %}
