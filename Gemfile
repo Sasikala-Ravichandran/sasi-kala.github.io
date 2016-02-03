@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'redcarpet'
+gem 'kramdown'
 gem 'rouge'
 gem 'jekyll-watch'
 gem 'jekyll-paginate'
