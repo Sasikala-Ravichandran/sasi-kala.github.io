@@ -80,29 +80,29 @@ bye
 
 &ensp;&ensp;&ensp;&ensp;As their name indicates,they provide values to the shell when executing a command. While the command is being executed, it may need a value from an environment variable to accomplish a task. These variables are used for storing data, storing software configuration details, locating the terminal setting etc.. For example, A running program may need a home directory location information for storing a file in home directory. Hence it refers HOME environment variable for the location. 
 
-##Source code, Compiler and Virtual Machine
+## Source code, Compiler and Virtual Machine
 
 ![Compilation]( /assets/4_Compilation.png){:class="sizing"}
 
 &ensp;&ensp;&ensp;&ensp;When a programmer does coding (writing instructions or logic) in any programming language, the code is called source code. Source code is typed in a source file using an editor like sublime text and name the source file with appropriate extension like .c, .java, .rb. Extension tells the compiler that code must obey the rules of corresponding programming language. Source code can not be executed as a program by the computer as it understands only ones and zeros. So code has to be converted into **machine language or bytecode or object code or executables or binaries** which are in the form of ones and zeros for the processor to understand and perform a task. Machine code is not easy for developers to read or modify. Thus we need a special program called a __compiler__ which does the job of converting source code into byte code which is meant for processor to execute. Then executable is passed to a virtual machine to execute it. Compilers are usually stored in folder **/usr/bin**. For example, `/usr/bin/gcc, /usr/bin/javac`
 
-##Ruby Specifics
+## Ruby Specifics
 
 &ensp;&ensp;&ensp;&ensp;With above mentioned terms and concepts of computer science in general, I will dive into Ruby specific concepts. 
 
-##Ruby
+## Ruby
 &ensp;&ensp;&ensp;&ensp;Its a developer's friendly language. We can install many ruby versions in a machine using ruby version manager. 
 
-##RubyGems
+## RubyGems
 &ensp;&ensp;&ensp;&ensp;RubyGems is a built-in package manager comes with every Ruby implementation. It is used to install and manage various gems using `gem` command for a given ruby implementation.
 
-##Ruby Compilers 
+## Ruby Compilers 
 <br>
 ![Ruby Versions]( /assets/5_diff_ruby_version.png){:class="sizing"}
 
 &ensp;&ensp;&ensp;&ensp;There are multiple implementations of Ruby compilers like `MRI, REE, Rubinius, Jruby` etc. Depending upon scenarios and environments, developers use different implementations of Ruby.
 
-##Ruby Directory structure 
+## Ruby Directory structure 
 
 &ensp;&ensp;&ensp;&ensp;Ruby has a directory structure which contains following directories.
 
@@ -114,11 +114,11 @@ bye
 
 **bin:** It contains binaries like erb, gem, irb, rake, rdoc, ri, ruby, testrb and also contains binaries from a gem installation.
 
-##Ruby binaries
+## Ruby binaries
 
 &ensp;&ensp;&ensp;&ensp;These are binaries that come with ruby installation. Examples are `erb, gem, irb, rake, rdoc, ri, ruby, testrb`.Gems  will have binaries too. So when we install a gem, gem binaries are added to bin directory of ruby implementation like `rails, bundle` etc... 
    
-##Gem
+## Gem
 
 &ensp;&ensp;&ensp;&ensp;A gem is a library or plug-in installed to have specific functionality for an application. Every Gem installed comes with its binaries like `rails` command from rails gem, `bundle` command from bundler gem. Gems will be installed to the default system location for each ruby version in a machine and each ruby implementation can have multiple versions of same gem. Storage path for Jruby and MRI Ruby implementations are 
 
@@ -128,7 +128,7 @@ bye
 {% endhighlight %}
 
 
-##Bundler
+## Bundler
 
 &ensp;&ensp;&ensp;&ensp;Bundler is a gem which provides a consistent environment for ruby projects and applications by tracking and installing the exact versions of gems that are needed for the application. It manages project dependencies.
 
@@ -140,7 +140,7 @@ In development setup, bundler will install the gems in the same place as RubyGem
 
 **Bundle exec:** For every Gem installed, there will be binaries that come with that gem. For example, `rails` command from rails gem, `rake` command from rake gem. When multiple versions of same gem installed for a given Ruby implementation, there will be a conflict while executing a binary. To avoid such conflicts, Gemfile is used to specify the version of the gems needed for an application. Also Bundler provides `bundle exec` command to execute the binaries of exact gem version specified in the current application's Gemfile. For example, `bundle exec rake` executes rake command from exact version mentioned in Gemfile and ensures that all dependencies are loaded from the correct versions specified in Gemfile.lock file.
 
-##Basic ruby commands
+## Basic ruby commands
 
 
 {% highlight sh %}
@@ -176,11 +176,11 @@ $bundle show <gemname>
 
 {% endhighlight %}
 
-##Ruby versioning tool
+## Ruby versioning tool
 
 &ensp;&ensp;&ensp;&ensp;RVM and rbenv are the popular ruby versioning tools though other Ruby version managers available like CHRUBY . A version manager tool helps us with two main components which are installing different ruby versions on a machine and switching installed rubies reliably. In this section, I will go through rbenv to get hang of a version manager tool.
 
-##rbenv tool
+## rbenv tool
 
 ![rbenv tool]( /assets/6_rbenv_workflow.png){:class="sizing"}
 
@@ -195,7 +195,7 @@ rbenv inserts a directory of shims at the front of your PATH. rbenv maintains sh
 
  Fig: Steps of rbenv
 
-##Basic commands of rbenv
+## Basic commands of rbenv
 
 {% highlight sh %}
 
@@ -230,7 +230,7 @@ $rbenv local
 
 Once particular ruby version is set as local or global, use `ruby -v` to check the correct ruby version is set to work on and use `gem` or `bundle install` commands to install the gems.
 
-##References:
+## References:
 
 Here are the links which I have used while understanding these concepts 
 
@@ -239,6 +239,3 @@ Here are the links which I have used while understanding these concepts
 [Github page of rbenv](https://github.com/rbenv/rbenv)
 
 [Gist of rbenv](https://gist.github.com/MicahElliott/2407918)
-
-
-
