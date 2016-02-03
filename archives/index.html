@@ -4,7 +4,7 @@ title: Archives
 description: "Archive page of Sasikala Ravichandran"
 ---
 
-<h1 style="text-align: center; margin-bottom: 25px;">Tags</h1>
+<h1 style="text-align: center; margin-bottom: 25px;">Tagged Archive</h1>
 {% capture site_tags %}
   {% for tag in site.tags %}
     {{ tag | first }}
@@ -15,7 +15,7 @@ description: "Archive page of Sasikala Ravichandran"
   <ul class="tag-cloud">
    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
      {% capture this_tag %}{{ sortedtags[item] | strip_newlines }}{% endcapture %}
-      <li><a href="#{{ this_tag | cgi_escape }}" class="btn">
+      <li><a href="#{{ this_tag | cgi_escape }}" class="btn btn_default">
         {{ this_tag }}<span>({{ site.tags[this_tag].size }})</span>
       </a></li>
     {% endunless %}{% endfor %}
@@ -28,7 +28,7 @@ description: "Archive page of Sasikala Ravichandran"
     <h3 id="{{ this_tag | cgi_escape }}">{{ this_tag }}</h3>
     <ul class="posts">
       {% for post in site.tags[this_tag] %} 
-      <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+      <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo; <a href="{{ site.url }}{{ post.url }}" class="tag_links">{{ post.title }}</a></li>
      {% endfor %}
    </ul>
    {% endunless %}{% endfor %}

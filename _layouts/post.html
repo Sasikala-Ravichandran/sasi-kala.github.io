@@ -18,7 +18,7 @@ layout: default
           {% for item in (0..page.tags.size) %}{% unless forloop.last %}
             {% capture this_tag %}{{ sortedpagetags[item] | strip_newlines }}
             {% endcapture %}
-            <a href="{{site.url}}/archives/#{{ this_tag }}">{{ this_tag }}</a>
+            <a href="{{site.url}}/archives/#{{ this_tag }}" class="tag_links">{{ this_tag }}</a>
           {% endunless %}{% endfor %}
          </small>
          <p></p>

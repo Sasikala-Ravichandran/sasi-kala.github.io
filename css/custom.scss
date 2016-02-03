@@ -23,6 +23,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Dosis', sans-serif;
 }
 
+.btn_default{
+   color: #333;
+   background-color: #e6e6e6;
+   border-color: #adadad;
+   &:hover{
+     background-color: #fff;
+     color: #000;
+   }
+}
+
 .sizing {
   width: 100%;
 }
@@ -38,8 +48,8 @@ p, div {
   color: inherit;
   &:hover{
      color: #5e6e7e;
-     text-decoration:none; 
-     cursor:pointer;  
+     text-decoration: none; 
+     cursor: pointer;  
   }
 }
 
@@ -95,6 +105,16 @@ p, div {
 }
 .archive-item {
   margin-left: 0px;
+}
+
+.tag_links{
+  color: #93ccea;
+  &:hover{
+    color: #5e6e7e;
+    text-decoration: none; 
+    cursor: pointer;  
+  }
+   
 }
 .post-tags {
   text-align: right;
