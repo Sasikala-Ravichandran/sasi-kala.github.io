@@ -11,7 +11,8 @@ description: "Home page of Sasikala Ravichandran"
         {% for post in paginator.posts  %}
           <li>
             <div class="post-preview">
-               <a style="text-decoration:none" href="{{site.url}}{{ post.url }}">
+               <a style="text-decoration:none" href="{{site.url}}{{ post.url }}"
+                  class="post_links" >
                  <h1 class="post-title">{{ post.title }}</h1>
                </a>
                <small class="post-meta">
@@ -26,7 +27,7 @@ description: "Home page of Sasikala Ravichandran"
                  {% for item in (0..post.tags.size) %}{% unless forloop.last %}
                    {% capture this_tag %}{{ sortedposttags[item] | strip_newlines }}
                    {% endcapture %}
-                   <a href="{{site.url}}/archives/#{{ this_tag }}">{{ this_tag }}</a>
+                   <a href="{{site.url}}/archives/#{{ this_tag }}" class="tag_links">{{ this_tag }}</a>
                  {% endunless %}{% endfor %}
                  <!--<i class="fa fa-comments"></i>
                  &nbsp;<a href="{{ post.url }}#disqus_thread"></a> -->

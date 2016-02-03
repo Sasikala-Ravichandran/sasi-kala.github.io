@@ -8,8 +8,7 @@ comments: true
 disqus_identifier: 71c56024-04bd-4963-830d-aa5946bf6a70  
 ---
 
-&ensp;&ensp;&ensp;&ensp;When I want to start blogging about programming, I was thinking where should start. After couple of thoughts, I intuited to write about fundamentals of the computer system as it is de facto programming concepts to grasp for a coder.
-As of this writing, I am using Ubuntu 15.04 which is Debian-based Linux operating system.
+&ensp;&ensp;&ensp;&ensp;When I wanted to start blogging about programming, I was thinking where I should start. After couple of thoughts, I intuited to blog about fundamentals of the computer system as it is de facto programming concepts to grasp for a coder. As of this writing, I am using Ubuntu 15.04 which is Debian-based Linux operating system.
 
 ## Operating System
  

@@ -24,13 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn_default{
-   color: #333;
-   background-color: #e6e6e6;
-   border-color: #adadad;
-   &:hover{
-     background-color: #fff;
-     color: #000;
-   }
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  &:hover{
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 .sizing {
@@ -44,12 +44,12 @@ p, div {
   margin-left: 100px;
 }
 
-#home a { 
+#home .post_links { 
   color: inherit;
   &:hover{
-     color: #5e6e7e;
-     text-decoration: none; 
-     cursor: pointer;  
+    color: #5e6e7e;
+    text-decoration: none; 
+    cursor: pointer;  
   }
 }
 
@@ -66,9 +66,9 @@ p, div {
 }
 
 #contact a {
-   color: #000000;
-   font-size: .75em;
-   text-decoration: none;
+  color: #000000;
+  font-size: .75em;
+  text-decoration: none;
 }
 
 #post h1{
@@ -80,9 +80,9 @@ p, div {
 }
 
 #about br{
-   display: block; /* makes it have a width */
-   content: ""; /* clears default height */
-   margin-top: 10px;
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 10px;
 }
 
 .tag-cloud {
