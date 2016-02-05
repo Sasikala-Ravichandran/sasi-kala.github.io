@@ -8,7 +8,7 @@ comments: true
 disqus_identifier: 71c56024-04bd-4963-830d-aa5946bf6a70  
 ---
 
-&ensp;&ensp;&ensp;&ensp;When I wanted to start blogging about programming, I was thinking where I should start. After couple of thoughts, I intuited to blog about fundamentals of the computer system as it is de facto programming concepts to grasp for a coder. As of this writing, I am using Ubuntu 15.04 which is Debian-based Linux operating system.
+&ensp;&ensp;&ensp;&ensp;When I wanted to start my blogging journey, I was thinking what topic to start to blog on. After couple of thoughts, I intuited to write about fundamentals of computer systems as it is de facto programming concepts to grasp for a coder. As of this writing, I am using Ubuntu 15.04 which is Debian-based Linux operating system. Come On, Let's Dive In!
 
 ## Operating System
  
@@ -238,3 +238,5 @@ Here are the links which I have used while understanding these concepts
 [Github page of rbenv](https://github.com/rbenv/rbenv)
 
 [Gist of rbenv](https://gist.github.com/MicahElliott/2407918)
+
+&ensp;&ensp;&ensp;&ensp;Hope you enjoyed reading my post about shell, compilers, rbenv and so forth and found it useful.
