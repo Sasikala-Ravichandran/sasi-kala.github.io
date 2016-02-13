@@ -38,8 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sizing_partial {
-  width: 50%;
-  margin: 0 auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
 }
 
 p, div {
