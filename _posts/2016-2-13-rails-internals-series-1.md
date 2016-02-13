@@ -140,4 +140,4 @@ If the request is successfully received,200 is sent by server ususally
 
 **Model** layer is defines the business data and rules (business logic) and it takes care of mapping the business objects of the application to tables of the RDMS. **Controller** layer handles the incoming HTTP requests, saves/updates  the data to the model or queries the model for specific data and makes the data available to the view template and renders the HTML page to the browser. **view** gets the database dynamic driven data from the controller and generates the html output and makes it available to the controller which in return sends the web page to the browser.
 
-&ensp;&ensp;&ensp;&ensp;Enough said about web technologies, I will delve into Rails internal for the rest of the series.
+&ensp;&ensp;&ensp;&ensp;Enough said about web technologies, I will delve into Rails internals for the rest of the series.
