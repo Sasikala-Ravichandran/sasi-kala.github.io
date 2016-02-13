@@ -55,8 +55,8 @@ These binaries are non essential commands (not much needed to run the machine) s
 
 I remember I wrote 'upload.sh', a small scripting program for compiling C++ source file, connecting to a server using ftp, passing the username and password of the server, putting my binaries in the server and I stored it in the home directory. When I type `./upload.sh` in the command prompt, my shell accomplishes all task listed in the script.
 
-
 {% highlight sh %}
+
 upload.sh 
 
 #!/bin/bash 
@@ -191,8 +191,6 @@ $bundle show <gemname>
 
 rbenv works with shims which are lightweight executables that simply pass command along to rbenv.
 rbenv inserts a directory of shims at the front of your PATH. rbenv maintains shims in ~/.rbenv/shims  directory to match every Ruby command across every installed version of Ruby.
-
- Fig: Steps of rbenv
 
 ## Basic commands of rbenv
 

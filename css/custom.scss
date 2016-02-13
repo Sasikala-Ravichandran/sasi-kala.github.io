@@ -36,6 +36,12 @@ h1, h2, h3, h4, h5, h6 {
 .sizing {
   width: 100%;
 }
+
+.sizing_partial {
+  width: 50%;
+  margin-left: 160px;
+}
+
 p, div {
   font-family: 'Dosis', sans-serif;
 }
