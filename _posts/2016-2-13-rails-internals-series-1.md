@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Rails Internals Series
-description: Part one - Series of Rails Internals
+title:  Overview of Web App - Rails Internals Series - I
+description: Part One - Series of Rails Internals - Intro to HTTP, MVC, REST, etc..
 author: Sasikala Ravichandran
 tags: [Web, HTTP, MVC, REST]
 comments: true

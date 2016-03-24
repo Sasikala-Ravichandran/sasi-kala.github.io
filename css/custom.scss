@@ -44,12 +44,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 60%;
 }
 
+.sizing_partial_width {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+}
+
 p, div {
   font-family: 'Dosis', sans-serif;
 }
 
 #logo{
   margin-left: 100px;
+  letter-spacing: 150%;
 }
 
 #home .post_links { 
@@ -145,7 +153,7 @@ p, div {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 40px;
+  height: 60px;
   background-color: #252C34;
   text-align: left;
   padding: 5px;
