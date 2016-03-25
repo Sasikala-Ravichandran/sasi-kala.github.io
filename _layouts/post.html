@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<article id="post"> 
+<article id="post">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
         {% capture page_tags %}
-         {% for tag in page.tags %} {{ tag }} {% endfor %}
+          {% for tag in page.tags %} {{ tag }} {% endfor %}
         {% endcapture %}
         {% assign sortedpagetags = page_tags | split:' ' | sort %}
         <h1>{{ page.title }}</h1>
@@ -15,18 +15,21 @@ layout: default
         <small class="text-muted">
           <i class="fa fa-calendar"></i>&nbsp;{{ page.date | date_to_string }}&nbsp;
           <i class="fa fa-tags"></i>&nbsp;
-          {% for item in (0..page.tags.size) %}{% unless forloop.last %}
-            {% capture this_tag %}{{ sortedpagetags[item] | strip_newlines }}
-            {% endcapture %}
-            <a href="{{site.url}}/archives/#{{ this_tag }}" class="tag_links">{{ this_tag }}</a>
-          {% endunless %}{% endfor %}
-         </small>
-         <p></p>
-         <hr>
-         <!--<small><em>{{ page.description }}</em></small> -->
-         {{ content }}
-         {% include share_buttons.html %}
-         {% include comments.html %}
+          {% for item in (0..page.tags.size) %}
+            {% unless forloop.last %}
+              {% capture this_tag %}
+                {{ sortedpagetags[item] | strip_newlines }}
+              {% endcapture %}
+              <a href="{{site.url}}/archives/#{{ this_tag }}" class="tag_links">{{ this_tag }}</a>
+            {% endunless %}
+          {% endfor %}
+        </small>
+        <p></p>
+        <hr>
+        <!--<small><em>{{ page.description }}</em></small> -->
+        {{ content }}
+        {% include share_buttons.html %}
+        {% include comments.html %}
       </div>
     </div>
   </div>

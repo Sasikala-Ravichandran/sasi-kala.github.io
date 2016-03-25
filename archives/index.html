@@ -12,25 +12,28 @@ description: "Archive page of Sasikala Ravichandran"
 {% endcapture %}
  
 {% assign sortedtags = site_tags | split:' ' | sort %}
-  <ul class="tag-cloud">
-   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-     {% capture this_tag %}{{ sortedtags[item] | strip_newlines }}{% endcapture %}
-      <li><a href="#{{ this_tag | cgi_escape }}" class="btn btn_default">
+
+<ul class="tag-cloud">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_tag %}{{ sortedtags[item] | strip_newlines }}{% endcapture %}
+    <li>
+      <a href="#{{ this_tag | cgi_escape }}" class="btn btn_default">
         {{ this_tag }}<span>({{ site.tags[this_tag].size }})</span>
-      </a></li>
-    {% endunless %}{% endfor %}
-    </ul>
+      </a>
+    </li>
+  {% endunless %}{% endfor %}
+</ul>
 
 <div id="archives">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-  <div class="archive-group">
-    {% capture this_tag %}{{ sortedtags[item] | strip_newlines }}{% endcapture %}
-    <h3 id="{{ this_tag | cgi_escape }}">{{ this_tag }}</h3>
-    <ul class="posts">
-      {% for post in site.tags[this_tag] %} 
-      <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo; <a href="{{ site.url }}{{ post.url }}" class="tag_links">{{ post.title }}</a></li>
-     {% endfor %}
-   </ul>
-   {% endunless %}{% endfor %}
-</div>
+    <div class="archive-group">
+      {% capture this_tag %}{{ sortedtags[item] | strip_newlines }}{% endcapture %}
+      <h3 id="{{ this_tag | cgi_escape }}">{{ this_tag }}</h3>
+      <ul class="posts">
+        {% for post in site.tags[this_tag] %}
+          <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo; <a href="{{ site.url }}{{ post.url }}" class="tag_links">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endunless %}{% endfor %}
 </div>

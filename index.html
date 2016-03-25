@@ -11,39 +11,38 @@ description: "Home page of Sasikala Ravichandran"
         {% for post in paginator.posts  %}
           <li>
             <div class="post-preview">
-               <a style="text-decoration:none" href="{{site.url}}{{ post.url }}"
+              <a style="text-decoration:none" href="{{site.url}}{{ post.url }}"
                   class="post_links" >
-                 <h1 class="post-title">{{ post.title }}</h1>
-               </a>
-               <small class="post-meta">
-                 <i class="fa fa-calendar"></i>
-                 &nbsp;{{ post.date | date_to_string }} &nbsp;
-                 <i class="fa fa-tags"></i>
-                 &nbsp; 
-                 {% capture post_tags %}
-                   {% for tag in post.tags %} {{ tag }} {% endfor %}
-                 {% endcapture %}
-                 {% assign sortedposttags = post_tags | split:' ' | sort %}
-                 {% for item in (0..post.tags.size) %}{% unless forloop.last %}
-                   {% capture this_tag %}{{ sortedposttags[item] | strip_newlines }}
-                   {% endcapture %}
-                   <a href="{{site.url}}/archives/#{{ this_tag }}" class="tag_links">{{ this_tag }}</a>
-                 {% endunless %}{% endfor %}
-                 <!--<i class="fa fa-comments"></i>
-                 &nbsp;<a href="{{ post.url }}#disqus_thread"></a> -->
-               </small> 
-                
-               <p class="post-subtitle"><em>{{ post.description }}</em></p>
-               <!-- <p>{{ post.excerpt }}</p> -->
-               <hr>
-              </div>
+                <h1 class="post-title">{{ post.title }}</h1>
+              </a>
+              <small class="post-meta">
+                <i class="fa fa-calendar"></i>
+                &nbsp;{{ post.date | date_to_string }} &nbsp;
+                <i class="fa fa-tags"></i>
+                &nbsp;
+                {% capture post_tags %}
+                  {% for tag in post.tags %} {{ tag }} {% endfor %}
+                {% endcapture %}
+                {% assign sortedposttags = post_tags | split:' ' | sort %}
+                {% for item in (0..post.tags.size) %}{% unless forloop.last %}
+                  {% capture this_tag %}{{ sortedposttags[item] | strip_newlines }}
+                  {% endcapture %}
+                  <a href="{{site.url}}/archives/#{{ this_tag }}" class="tag_links">{{ this_tag }}</a>
+                {% endunless %}{% endfor %}
+                <!--<i class="fa fa-comments"></i>
+                &nbsp;<a href="{{ post.url }}#disqus_thread"></a> -->
+              </small> 
+              <p class="post-subtitle"><em>{{ post.description }}</em></p>
+              <!-- <p>{{ post.excerpt }}</p> -->
+              <hr>
+            </div>
           </li>
         {% endfor %}
       </ul>
-     </div>
+    </div>
   </div>
  
-<!-- Pagination links -->
+  <!-- Pagination links -->
 
   <div class="row">
     <div class="col-lg-2 col-lg-offset-5 col-md-10 col-md-offset-1">

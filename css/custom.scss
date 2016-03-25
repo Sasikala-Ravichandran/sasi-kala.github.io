@@ -23,11 +23,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Dosis', sans-serif;
 }
 
-.btn_default{
+.btn_default {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
-  &:hover{
+  &:hover {
     background-color: #fff;
     color: #000;
   }
@@ -44,40 +44,33 @@ h1, h2, h3, h4, h5, h6 {
   width: 60%;
 }
 
-.sizing_partial_width {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 60%;
-}
-
 p, div {
   font-family: 'Dosis', sans-serif;
 }
 
-#logo{
+#logo {
   margin-left: 100px;
   letter-spacing: 150%;
 }
 
-#home .post_links { 
+#home .post_links {
   color: inherit;
-  &:hover{
+  &:hover {
     color: #5e6e7e;
-    text-decoration: none; 
-    cursor: pointer;  
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
-#home h1{
+#home h1 {
   margin-bottom: 0px;
 }
 
-#home small{
+#home small {
   margin-top: 0px;
 }
 
-#contact{
+#contact {
   list-style-type: none;
 }
 
@@ -87,15 +80,15 @@ p, div {
   text-decoration: none;
 }
 
-#post h1{
+#post h1 {
   margin-bottom: 0px;
 }
 
-#post hr{
+#post hr {
   margin-top: 0px;
 }
 
-#about br{
+#about br {
   display: block; /* makes it have a width */
   content: ""; /* clears default height */
   margin-top: 10px;
@@ -112,58 +105,66 @@ p, div {
     margin: 0 12px 12px 0; 
   }
 }
+
 #archives {
   padding: 5px;
 }
+
 .archive-group {
   margin: 5px;
   border-top: 1px solid #ddd;
 }
+
 .archive-item {
   margin-left: 0px;
 }
 
-.tag_links{
+.tag_links {
   color: #93ccea;
-  &:hover{
+  &:hover {
     color: #5e6e7e;
-    text-decoration: none; 
-    cursor: pointer;  
+    text-decoration: none;
+    cursor: pointer;
   }
-   
 }
+
 .post-tags {
   text-align: right;
 }
+
 .fa_share {
   color: black;
 }
+
 #contactForm {
   margin-top: 20px;
   width: 50%;
   margin: auto;
 }
 
-.send_btn{
-   text-align: center;
-   margin: 0, auto;
+.send_btn {
+  text-align: center;
+  margin: 0, auto;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
+  /* Set the responsive height of the footer here */
+  height: 1%;
   background-color: #252C34;
   text-align: left;
   padding: 5px;
   padding-left: 15px;
   color: #566473;
 }
+
 .footer ul {
-  padding: 0;
+  padding: 10px 0 0 0;
   margin: 0;
 }
+
 .footer small p {
   font-size: .6em;
   padding: 0;
