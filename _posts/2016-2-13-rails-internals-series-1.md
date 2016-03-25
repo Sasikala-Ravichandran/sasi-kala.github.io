@@ -6,12 +6,11 @@ author: Sasikala Ravichandran
 tags: [Web, HTTP, MVC, REST]
 comments: true
 disqus_identifier: 05bfaa6c-ae4a-4b12-9c02-1d1befe2cfb2  
-
 ---
 
 &ensp;&ensp;&ensp;&ensp;I have been learning and practising Rails for nearly an year. At one point in my learning journey, I realized that knowing Rails and its components and how they tied together to function as a web application, I was able to get a good grip of the building process of web application. Also learning the building blocks of Rails helped me to know what Ruby on Rails as a web framework offers to web developers and how it makes the development process easy. Hence the result is series of posts with what I learnt about Rails Internals (especially from the beginner's prespective).
 
-&ensp;&ensp;&ensp;&ensp;This post is the first part of the Rails Internal Series. Although there are tons and tons of resources about web technologies available in web, I start with my tiny bit explanation about them as this post keeps the flow of series going. Here are the very basic and minimal description of web technologies. I hope this series will be helpful and informative to anyone who is starting  to learn Rails.
+&ensp;&ensp;&ensp;&ensp;This post is the first part of the series. Although there are tons and tons of resources about web technologies available in web, I start with my tiny bit explanation about them as this post keeps the flow of series going. Here are the very basic and minimal description of web technologies. I hope this series will be helpful and informative to anyone who is starting  to learn Rails.
 
 ## Client-Server Model
 
@@ -141,3 +140,7 @@ If the request is successfully received,200 is sent by server ususally
 **Model** layer defines the business data and rules (business logic) and it takes care of mapping the business objects of the application to tables of the RDMS. **Controller** layer handles the incoming HTTP requests, saves/updates  the data to the model or queries the model for specific data and makes the data available to the view template and renders the HTML page to the browser. **View** gets the database dynamic driven data from the controller and generates the html output and makes it available to the controller which in return sends the web page to the browser.
 
 &ensp;&ensp;&ensp;&ensp;Enough said about web technologies, I will delve into Rails internals for the rest of the series.
+<hr>
+#### **Other posts of the series:**
+&ensp;&ensp;&ensp;&ensp;[Second series - ActiveRecord   >>](/blog/rails-internals-series-2-ActiveRecord){:class="tag_links"}
+<hr>

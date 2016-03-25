@@ -48,7 +48,13 @@ disqus_identifier: b1cb8284-0990-4c5a-9011-5d274399d52d
 
 &ensp;&ensp;&ensp;&ensp;Here I just listed few modules to get hang of them. We can’t remember or memorize every method from every module. So I attempted to blog tiny bit about ActiveRecord at least to have little awareness towards ‘under the hood’ of Rails. Hope you find this post useful.
 
-## Reference
-&ensp;&ensp;&ensp;&ensp;[Rails API](http://api.rubyonrails.org/)<br />
-&ensp;&ensp;&ensp;&ensp;[Rails Guides](http://guides.rubyonrails.org/)
+<hr>
+#### **Other posts of the series:**
+&ensp;&ensp;&ensp;&ensp;[<<   First series - Overview of web](/blog/rails-internals-series-1){:class="tag_links"}
+<hr>
+
+## References
+&ensp;&ensp;&ensp;&ensp;[Rails API](http://api.rubyonrails.org/){:class="tag_links"}
+<br />
+&ensp;&ensp;&ensp;&ensp;[Rails Guides](http://guides.rubyonrails.org/){:class="tag_links"}
 <br />
