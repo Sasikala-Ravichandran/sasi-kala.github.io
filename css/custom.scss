@@ -23,6 +23,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Dosis', sans-serif;
 }
 
+.navbar {
+  border-radius: 0px;
+}
+
+.nav {
+  margin-right: 25px;
+}
+
 div#content {
   padding-bottom: 60px;
 }
@@ -54,7 +62,7 @@ p, div {
 
 #logo {
   margin-left: 100px;
-  letter-spacing: 150%;
+  font-size: larger;
 }
 
 #home .post_links {
@@ -124,7 +132,8 @@ p, div {
 }
 
 .tag_links {
-  color: #93ccea;
+  color: #000080;
+  text-decoration: none;
   &:hover {
     color: #5e6e7e;
     text-decoration: none;
@@ -138,6 +147,29 @@ p, div {
 
 .fa_share {
   color: black;
+}
+
+.skills_list{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.skill_tag {
+  display: inline-block;
+  border: 1px solid #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: rgba(80, 80, 80, 0.3)
+}
+
+.demo {
+  text-align: center;
+  margin-top: 10px;
 }
 
 #contactForm {

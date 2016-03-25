@@ -1,51 +1,41 @@
 ---
 layout: page
-title: My Work
+title: Portfolio
 description: "Portfolio"
 ---
 
-<div class="wrapper">
+<section id="portfolio">
+  <h1 align="center">Portfolio</h1>
+  {% for portfolio in site.portfolios %}
+    <h2 align="left">{{ portfolio.title }}</a></h2>
 
-    <section class="text-center">
-        <h1>Project Portfolio</h1>
-        <h2>Project 1</a></h2>
+    <ul class="slider1">
+      {% for image in portfolio.images %}
+        <li><img src="{{ image.path }}" title="{{ image.caption }}" /></li>
+      {% endfor %}
+    </ul>
 
-        <p>Add paragraphs for project description here.</p>
+    <ul class="skills_list">
+      {% for skill in portfolio.skills %}
+        <li class="skill_tag">{{ skill }}</li>
+      {% endfor %}
+    </ul>
 
-        <h2>Project 2</a></h2>
+    <p class="demo">Checkout the live version for demo <a href="{{ portfolio.production }}" target="_blank" class="tag_links">here.</a></p>
+    <p class="demo">Checkout GitHub repo <a href="{{ portfolio.github }}" target="_blank" class="tag_links">here.</a></p>
 
-        <p>Add paragraphs for project description here.</p>
+    <p>{{ portfolio.content }}</p>
+    <hr>
+  {% endfor %}
+</section>
 
-        <h2>Project 3</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-
-        <h2>Project 4</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-
-        <h2>Project 5</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-
-        <h2>Project 6</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-        <h2>Project 7</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-        
-        <h2>Project 8</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-        <h2>Project 9</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-
-        <h2>Project 10</a></h2>
-
-        <p>Add paragraphs for project description here.</p>
-
-    </section>
-</div>
-  
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider1').bxSlider({
+      auto: true,
+      pager: true,
+      slideWidth: 800,
+      captions: true
+    });
+  });
+</script>
