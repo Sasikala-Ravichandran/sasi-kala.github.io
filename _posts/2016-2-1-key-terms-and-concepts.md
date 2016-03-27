@@ -12,7 +12,7 @@ disqus_identifier: 71c56024-04bd-4963-830d-aa5946bf6a70
 
 ## Operating System
  
-![Block Diagram]( /assets/1_OS.png){:class="sizing_partial"}
+![Block Diagram]( /assets/posts_img/1_OS.png){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;Operating system is a low level software which provides communication bridge between hardware and software on a computer. It also manages memory, process, files etc..
 
@@ -22,7 +22,7 @@ disqus_identifier: 71c56024-04bd-4963-830d-aa5946bf6a70
 
 ## Command line interface(CLI)
 
-![Command Line Interface]( /assets/2_CLI.png){:class="sizing_partial"}
+![Command Line Interface]( /assets/posts_img/2_CLI.png){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;In ubuntu, a terminal provides command line interface or user interface for the user to interact with underlying OS via shell to complete some tasks. CLI is more efficient way to accomplish a task than GUI in Linux distribution.
 
@@ -42,7 +42,7 @@ disqus_identifier: 71c56024-04bd-4963-830d-aa5946bf6a70
 
 ## Types of Commands
 <br>
-![Commands Types]( /assets/3_commands_types.png){:class="sizing_partial"}
+![Commands Types]( /assets/posts_img/3_commands_types.png){:class="sizing_partial"}
 
 **1) Built-in shell commands:** These binaries are the part of the shell itself. Examples are: `cd, eval, exec, exit, pwd, echo etc..`
 
@@ -81,7 +81,7 @@ bye
 
 ## Source code, Compiler and Virtual Machine
 
-![Compilation]( /assets/4_Compilation.png){:class="sizing_partial"}
+![Compilation]( /assets/posts_img/4_Compilation.png){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;When a programmer does coding (writing instructions or logic) in any programming language, the code is called source code. Source code is typed in a source file using an editor like sublime text and name the source file with appropriate extension like .c, .java, .rb. Extension tells the compiler that code must obey the rules of corresponding programming language. Source code can not be executed as a program by the computer as it understands only ones and zeros. So code has to be converted into **machine language or bytecode or object code or executables or binaries** which are in the form of ones and zeros for the processor to understand and perform a task. Machine code is not easy for developers to read or modify. Thus we need a special program called a __compiler__ which does the job of converting source code into byte code which is meant for processor to execute. Then executable is passed to a virtual machine to execute it. Compilers are usually stored in folder **/usr/bin**. For example, `/usr/bin/gcc, /usr/bin/javac`
 
@@ -97,7 +97,7 @@ bye
 
 ## Ruby Compilers 
 <br>
-![Ruby Versions]( /assets/5_diff_ruby_version.png){:class="sizing_partial"}
+![Ruby Versions]( /assets/posts_img/5_diff_ruby_version.png){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;There are multiple implementations of Ruby compilers like `MRI, REE, Rubinius, Jruby` etc. Depending upon scenarios and environments, developers use different implementations of Ruby.
 
@@ -181,7 +181,7 @@ $bundle show <gemname>
 
 ## rbenv tool
 
-![rbenv tool]( /assets/6_rbenv_workflow.png){:class="sizing_partial"}
+![rbenv tool]( /assets/posts_img/6_rbenv_workflow.png){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;It is a ruby version management tool which helps to install and manage different versions of ruby in a given machine. It comes handy when we need to have different ruby environments for different projects.
 

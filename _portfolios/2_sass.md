@@ -1,5 +1,5 @@
 ---
-title: Project Management System
+title: Project Management App
 production: https://project-saas.herokuapp.com/
 github: https://github.com/Sasikala-Ravichandran/project_saas_app
 skills: [Rails, HTML5, CSS3, Bootstrap, Milia, Devise, Stripe, Dropbox, GIT]

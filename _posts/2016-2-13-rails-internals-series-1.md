@@ -14,13 +14,13 @@ disqus_identifier: 05bfaa6c-ae4a-4b12-9c02-1d1befe2cfb2
 
 ## Client-Server Model
 
-![client-server model]( /assets/7_client_server.png){:class="sizing_partial"}
+![client-server model]( /assets/posts_img/7_client_server.png){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;Web technologies like HTML, CSS, jQuery, Ajax, HTTP, web frameworks and so forth are built around client-server model. In this architecture, Client(web browser) and  Server(host of web application) are connected to the Internet. Always client initiates the communication by making a request to access a web page(HTML document) which is hosted in the web server. To every request, web server responds with a web page (i.e) copy of the requested web page and its assets like images, music, video, Word documents,PDFs etc are downloaded from the server to client machine which is to be displayed in web browser. Usually web page is written in one of markup languages (HTML/XML). Other than browser and web server, there are many other components work together to make the communication possible like Internet connection, TCP/IP, DNS, HTTP etc.
 
 ## HTTP Protocol
 
-![HTTP Model]( /assets/8_HTTP_Model.png){:class="sizing_partial"}
+![HTTP Model]( /assets/posts_img/8_HTTP_Model.png){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;HTTP is the back bone for Internet. It is based on the request-response model. It is a communication protocol through which browser and web server communicate using TCP/IP. *TCP/IP is the protocol that define how data should travel across the Web.* HTTP helps to construct the request and response message in a such way that client and server understand each other on the web. Resources which are transferred between them are  a chunk of the information identified by an URL. Usually resource could be a file or dynamically generated query result or a script or a document. 
 
@@ -28,7 +28,7 @@ disqus_identifier: 05bfaa6c-ae4a-4b12-9c02-1d1befe2cfb2
 
 ## HTTP Request-Response Messages 
 
-![HTTP message format]( /assets/9_HTTP_Message_Format.jpg){:class="sizing_partial"}
+![HTTP message format]( /assets/posts_img/9_HTTP_Message_Format.jpg){:class="sizing_partial"}
 
 &ensp;&ensp;&ensp;&ensp;When we enter the URL in the browser, it translates the URL into a request message using URI and HTTP method according to the HTTP protocol standards and sends the request across the internet using TCP/IP. Web server receives the request and responds with the requested web page. So irrespective of how complex the application logic is, web application always responds with HTML as the browser intercepts HTML and displays web pages along with its assets like CSS, JavaScript and so forth. Hence Web server or Web application's primary job is to receive a request, process the request and create the HTML output.
 
