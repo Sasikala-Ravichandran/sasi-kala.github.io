@@ -6,15 +6,15 @@ skills: [Rails, HTML5, CSS3, Bootstrap, Ajax, Devise, Rspec, Capybara, Factory G
 images:
   - path: /assets/portfolio_img/2_event_lite/img/1_home_page.png
     caption: "Home Page"
-  - path: /assets/portfolio_img/2_event_lite/img/2_img_page.png
+  - path: /assets/portfolio_img/2_event_lite/img/2_my_page.png
     caption: "Events Page"
   - path: /assets/portfolio_img/2_event_lite/img/3_lookup_events.png
     caption: "Events Search Result"
-  - path: /assets/portfolio_img/2_event_lite/img/4_img_event_page_1.png
+  - path: /assets/portfolio_img/2_event_lite/img/4_my_event_page_1.png
     caption: "User's Hosting and Attending Events"
-  - path: /assets/portfolio_img/2_event_lite/img/5_img_event_page_2.png
+  - path: /assets/portfolio_img/2_event_lite/img/5_my_event_page_2.png
     caption: "User's Hosted, Attended and Invited Events"
-  - path: /assets/portfolio_img/2_event_lite/img/6_img_friends_page.png
+  - path: /assets/portfolio_img/2_event_lite/img/6_my_friends_page.png
     caption: "Friends Page"
   - path: /assets/portfolio_img/2_event_lite/img/7_lookup_friends.png
     caption: "Friends Search Result"
