@@ -1,6 +1,6 @@
 ##My Personal Website
 
-[Take a look at my site](http://sasi-kala.com){:target="_blank"}
+![Take a look at my site](http://sasi-kala.com){:target="_blank"}
 
 **Features added**
 
