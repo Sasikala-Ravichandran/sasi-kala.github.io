@@ -1,6 +1,6 @@
 ##My Personal Website
 
-![See here](http://sasi-kala.com/).
+[See here](http://sasi-kala.com).
 
 **Features added**
 
