@@ -56,6 +56,13 @@ div#content {
   width: 70%;
 }
 
+.sizing_partial_alter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
 @media only screen and (max-width: 500px) {
   .sizing_partial {
     width: 100%;

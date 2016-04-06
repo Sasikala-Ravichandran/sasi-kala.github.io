@@ -142,5 +142,7 @@ If the request is successfully received,200 is sent by server ususally
 &ensp;&ensp;&ensp;&ensp;Enough said about web technologies, I will delve into Rails internals for the rest of the series.
 <hr>
 #### **Other posts of the series:**
-&ensp;&ensp;&ensp;&ensp;[Second series - ActiveRecord   >>](/blog/rails-internals-series-2-ActiveRecord){:class="tag_links"}
+&ensp;&ensp;&ensp;&ensp;[2 - ActiveRecord >>](/blog/rails-internals-series-2-ActiveRecord){:class="tag_links"}
+
+&ensp;&ensp;&ensp;&ensp;[3 - ActionController >>](/blog/rails-internals-series-3-ActionController){:class="tag_links"}
 <hr>

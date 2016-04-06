@@ -50,11 +50,13 @@ disqus_identifier: b1cb8284-0990-4c5a-9011-5d274399d52d
 
 <hr>
 #### **Other posts of the series:**
-&ensp;&ensp;&ensp;&ensp;[<<   First series - Overview of web](/blog/rails-internals-series-1){:class="tag_links"}
+&ensp;&ensp;&ensp;&ensp;[<< 1 - Overview of web](/blog/rails-internals-series-1){:class="tag_links"}
+
+&ensp;&ensp;&ensp;&ensp;[3 - ActionController >>](/blog/rails-internals-series-3-ActionController){:class="tag_links"}
 <hr>
 
 ## References
 &ensp;&ensp;&ensp;&ensp;[Rails API](http://api.rubyonrails.org/){:class="tag_links"}
-<br />
+
 &ensp;&ensp;&ensp;&ensp;[Rails Guides](http://guides.rubyonrails.org/){:class="tag_links"}
 <br />
