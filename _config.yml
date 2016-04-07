@@ -1,3 +1,6 @@
+name:         Sasikala Ravichandran
+description:  A blog to treasure my web development skill
+url:          http://sasi-kala.com/
 navigation:
   - text: Blog
     title: Blog
@@ -15,6 +18,7 @@ navigation:
 url: http://www.sasi-kala.com
 
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
