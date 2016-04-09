@@ -16,9 +16,9 @@ navigation:
     url: /portfolio/
 
 url: http://www.sasi-kala.com
+#url: http://localhost:4000/
 
 markdown: kramdown
-highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
